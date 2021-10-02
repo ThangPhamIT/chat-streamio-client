@@ -26,7 +26,8 @@ const Auth = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const URL = 'http://localhost:9000/auth';
+    //const URL = 'http://localhost:9000/auth';
+    const URL = 'https://chat-streamio-server.herokuapp.com/auth';
     const { fullName, username, password, phoneNumber, avatarURL } = form;
 
     console.log('request: ', { fullName, username, password, phoneNumber, avatarURL });
